@@ -33,17 +33,20 @@ def sil ():
         print("Seçim yapın")
 
 def tumu_sil ():
-    liste.clear()
-    listbox.delete(0,tk.END)
-    print("Herşey silindi")
-    
-buton_ekle = tk.Button(pencere, text="Ekle",command=ekle)  
-buton_ekle.pack ()  
+    if liste:
+        liste.clear()
+        listbox.delete(0,tk.END)
+        print("Herşey silindi")
+    else:
+        print("Liste zaten boş")
+        
+buton_ekle = tk.Button(pencere, text="Ekle",width=15, height=2,command=ekle)  
+buton_ekle.pack()  
 
-buton_sil = tk.Button(pencere, text="Sil", command=sil)
+buton_sil = tk.Button(pencere, text="Sil",width=15, height=2, command=sil)
 buton_sil.pack()
 
-buton_allsil = tk.Button(pencere, text="Hepsini sil", command=tumu_sil)
+buton_allsil = tk.Button(pencere, text="Hepsini sil",width=15, height=2, command=tumu_sil)
 buton_allsil.pack()
 
 pencere.mainloop()
