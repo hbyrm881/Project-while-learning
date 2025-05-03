@@ -4,6 +4,7 @@ import requests
 def hava_durumu_getir():
     sehir = entry.get()
     url = f"https://wttr.in/{sehir}?format=%t"
+    entry.delete(0,tk.END)
     try:
         response = requests.get(url)
         sonuc.config(text=response.text)
