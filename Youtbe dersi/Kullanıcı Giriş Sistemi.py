@@ -3,7 +3,7 @@ kp = ["123","456"]
 print("Sisteme giriş yapmak: G kaydolmak: K  :")
 secim = input()
 
-if secim == "K":
+if secim.lower() == "k":
     ka = input("Kullanıcı adınız? :")
     pa = input("Parolanız? :")
     print("kaydolma başarılı şimdi giriş yapınız")
@@ -22,7 +22,7 @@ if secim == "K":
     else:
         print("Kullanıcı adı veya parola hatalı")
 
-elif secim == "G":
+elif secim.lower() == "g":
     gk = input("Kullanıcı adınız? :")
     gp = input("Parolanız? :")
 

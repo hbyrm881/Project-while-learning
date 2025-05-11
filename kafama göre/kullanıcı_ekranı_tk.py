@@ -2,9 +2,8 @@ import tkinter as tk
 import os
 
 pencere = tk.Tk()
-pencere.title("Sıkıldım")
-pencere.geometry("400x300")
 pencere.title("Login Ekranı")
+pencere.geometry("400x300")
 
 DOSYA_ADI = "kullanıcılar.txt"
 
