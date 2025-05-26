@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Başlangıç ekranı-->
+    <div class="start-screen start-animation">
+        <h1>Hoş Geldin</h1>
+        <button onclick="showLogin()">Giriş Yap</button>
+        <button onclick="showRegister()">Kayıt Ol</button>
+    </div>
+    
+    <!--Giriş formu ekranı (Başta gizli kalacak)-->
+    <div class="login-screen hidden">
+        <div class="container">
+            <div>
+                <br>
+                <label for="username" style="display: block;">Kullanıcı adı:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="password" style="display: block;">Şifre:</label>
+                <input type="password" id="password" name="password">
+                
+            </div>
+            <br>
+            <br>
+            <div class="butonlar">
+                <button onclick="girisYap()">Giriş</button>
+                <button onclick="geriDon()">Geri</button>
+            </div>
+        </div>
+    </div>
+    <!--Kayıt ol kısmı-->
+    <div class="register-screen hidden">
+        <div class="container-register">
+            <div>
+                <br>
+                <label for="email">E-posta Girin:</label>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="username-register" style="display: block;">Kullanıcı Adı Belirleyin:</label>
+                <input type="text" id="username-register">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="password-register" style="display: block;">Şifre Belirleyin:</label>
+                <input type="password" id="password-register" name="password-register">
+                <br>
+                <br>
+                <label for="password-register2">Şifrenizi Onaylayın:</label>
+                <input type="password" id="password-register2" name="password-register2">
+                
+            </div>
+            <br>
+            <br>
+            <div class="butonlar">
+                <button onclick="kayitOl()">Kayıt Ol</button>
+                <button onclick="geriDon()">Geri</button>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
