@@ -1,0 +1,81 @@
+<!--Geliştirilecekler:
+1- Sunucuya kullanıcıdan alınan veriler kayıt edilecek
+2- Sunucu oluşturmak öğrenilecek
+3- Gerekirse ekstra ekranlar eklenecek-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Başlangıç ekranı-->
+    <div class="start-screen start-animation">
+        <h1>Hoş Geldin</h1>
+        <button onclick="showLogin()">Giriş Yap</button>
+        <button onclick="showRegister()">Kayıt Ol</button>
+    </div>
+    
+    <!--Giriş formu ekranı (Başta gizli kalacak)-->
+    <form action="#">
+        <div class="login-screen hidden">
+            <div class="container">
+                <h1>Login</h1>
+                <div>
+                    <br>
+                    <label for="username" style="display: block;">Kullanıcı adı:</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="password" style="display: block;">Şifre:</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    
+                </div>
+                <br>
+                <br>
+                <div class="butonlar">
+                    <button onclick="geriDon()">Geri</button>
+                    <button onclick="girisYap()">Giriş</button>
+                </div>
+            </div>
+        </div>
+        <!--Kayıt ol kısmı-->
+        <div class="register-screen hidden">
+            <div class="container-register">
+                <div>
+                    <br> 
+                    <label for="email">E-posta Girin:</label>
+                    <input type="email" id="email" placeholder="E-mail">
+                    <br>
+                    <br>
+                    <label for="username-register" style="display: block;">Kullanıcı Adı Belirleyin:</label>
+                    <input type="text" id="username-register" placeholder="Username">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="password-register" style="display: block;">Şifre Belirleyin:</label>
+                    <input type="password" id="password-register" name="password-register" placeholder="Password">
+                    <br>
+                    <br>
+                    <label for="password-register2">Şifrenizi Onaylayın:</label>
+                    <input type="password" id="password-register2" name="password-register2" placeholder="Confirm password">
+                    
+                </div>
+                <br>
+                <br>
+                <div class="butonlar">
+                    <button onclick="geriDon()">Geri</button>
+                    <button onclick="kayitOl()">Kayıt Ol</button>
+            </div>
+            </div>
+        </div>
+    </form>    
+    <script src="script.js"></script>
+
+</body>
+</html>

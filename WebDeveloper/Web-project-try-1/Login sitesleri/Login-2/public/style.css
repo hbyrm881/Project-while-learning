@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(71, 11, 168);
+    background-color: rgb(71, 46, 170);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    color: white;
+    color: aliceblue;
 }
 .hidden {
     display: none;
@@ -30,9 +30,9 @@ body {
     color: darkgreen;
 }
 .container {
-    background-color: rgb(110, 46, 46);
+    background-color: rgb(161, 81, 6);
     width: 50%;
-    color: aliceblue;
+    color: black;
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
@@ -41,9 +41,9 @@ body {
     animation: slideUp 0.5 ease;
 }
 .container-register{
-    background-color: rgb(110, 46, 46);
+    background-color: rgb(175, 76, 10);
     width: 50%;
-    color: aliceblue;
+    color: black;
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
