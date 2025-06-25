@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            display : flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: aliceblue;
+        }
+        .butonlar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hesap Makinesi</p> 
+
+    <input type="text" id="sayi1" placeholder="1. sayı">
+    <br>
+    <input type="text" id="sayi2" placeholder="2. sayı">
+    <br>
+    <div class="butonlar">
+        <button onclick="topla()">Topla</button>
+        <button onclick="cikar()">Çıkar</button>
+        <br>
+        <button onclick="carp()">Çarp</button>
+        <button onclick="bol()">Böl</button>
+    </div>
+    <br><br>
+    <div id="ekranayaz"></div>
+
+
+    <script src="hesap.js"></script>
+</body>
+</html>
